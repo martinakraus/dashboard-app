@@ -27,7 +27,7 @@ jest.mock('@dhis2/ui', () => {
 /* eslint-enable react/prop-types */
 
 jest.mock(
-    '../../../components/Notice.js',
+    '../../../components/Notice.jsx',
     () =>
         function Mock() {
             return <div className="Notice" />
@@ -35,7 +35,7 @@ jest.mock(
 )
 
 jest.mock(
-    '../ActionsBar',
+    '../ActionsBar.jsx',
     () =>
         function MockActionsBar() {
             return <div>ActionsBar</div>
@@ -43,14 +43,14 @@ jest.mock(
 )
 
 jest.mock(
-    '../TitleBar',
+    '../TitleBar.jsx',
     () =>
         function MockTitleBar() {
             return <div>TitleBar</div>
         }
 )
 jest.mock(
-    '../ItemGrid',
+    '../ItemGrid.jsx',
     () =>
         function MockEditItemGrid() {
             return <div>ItemGrid</div>
@@ -58,7 +58,7 @@ jest.mock(
 )
 
 jest.mock(
-    '../../print/PrintLayoutDashboard',
+    '../../print/PrintLayoutDashboard.jsx',
     () =>
         function MockLayoutPrintPreview() {
             return <div>LayoutPrintPreview</div>

@@ -52,7 +52,7 @@ jest.mock('@dhis2/ui', () => {
 })
 /* eslint-enable react/prop-types, react/no-unknown-property */
 
-jest.mock('../../../modules/useDimensions', () => ({
+jest.mock('../../../modules/useDimensions.js', () => ({
     __esModule: true,
     default: () => {
         return [

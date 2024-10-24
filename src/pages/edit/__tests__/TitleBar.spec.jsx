@@ -7,7 +7,7 @@ import TitleBar from '../TitleBar.jsx'
 const mockStore = configureMockStore()
 
 jest.mock(
-    '../ItemSelector/ItemSelector.js',
+    '../ItemSelector/ItemSelector.jsx',
     () =>
         function MockItemSelector() {
             return <div className="item-selector" />

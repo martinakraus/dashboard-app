@@ -27,7 +27,7 @@ jest.mock('@dhis2/ui', () => {
 })
 
 jest.mock(
-    '../../ItemHeader/DeleteItemButton.js',
+    '../../ItemHeader/DeleteItemButton.jsx',
     () =>
         function Mock() {
             return <div className="DeleteItemButton" />

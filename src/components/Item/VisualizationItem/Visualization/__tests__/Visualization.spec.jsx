@@ -14,7 +14,7 @@ jest.mock('@dhis2/analytics', () => ({
 }))
 
 jest.mock(
-    '../LegacyPlugin',
+    '../LegacyPlugin.jsx',
     () =>
         function MockLegacyPlugin() {
             return <div className="legacy-plugin" />
@@ -22,7 +22,7 @@ jest.mock(
 )
 
 jest.mock(
-    '../IframePlugin',
+    '../IframePlugin.jsx',
     () =>
         function MockIframePlugin() {
             return <div className="iframe-plugin" />

@@ -47,7 +47,6 @@ exports[`Filter renders with empty filter text 1`] = `
         type="text"
         value=""
       />
-      
     </div>
   </span>
 </div>

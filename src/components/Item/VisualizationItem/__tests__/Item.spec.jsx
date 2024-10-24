@@ -9,7 +9,7 @@ import WindowDimensionsProvider from '../../../WindowDimensionsProvider.jsx'
 import Item from '../Item.jsx'
 
 jest.mock('../../../../api/fetchVisualization')
-jest.mock('../../../SystemSettingsProvider')
+jest.mock('../../../SystemSettingsProvider.jsx')
 jest.mock('../Visualization/plugin', () => {
     return {
         pluginIsAvailable: () => true,
@@ -17,7 +17,7 @@ jest.mock('../Visualization/plugin', () => {
 })
 
 jest.mock(
-    '../../ItemHeader/DeleteItemButton.js',
+    '../../ItemHeader/DeleteItemButton.jsx',
     () =>
         function Mock() {
             return <div className="DeleteItemButton" />

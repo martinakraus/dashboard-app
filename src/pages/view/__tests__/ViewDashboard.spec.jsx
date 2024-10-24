@@ -30,7 +30,7 @@ jest.mock('@dhis2/app-runtime', () => ({
 jest.mock('../../../api/fetchDashboard')
 
 jest.mock(
-    '../../../components/DashboardsBar/DashboardsBar',
+    '../../../components/DashboardsBar/DashboardsBar.jsx',
     () =>
         function MockDashboardsBar() {
             return <div>DashboardsBar</div>
@@ -38,7 +38,7 @@ jest.mock(
 )
 
 jest.mock(
-    '../TitleBar/TitleBar',
+    '../TitleBar/TitleBar.jsx',
     () =>
         function MockTitleBar() {
             return <div>TitleBar</div>
@@ -46,7 +46,7 @@ jest.mock(
 )
 
 jest.mock(
-    '../FilterBar/FilterBar',
+    '../FilterBar/FilterBar.jsx',
     () =>
         function MockFilterBar() {
             return <div>MockFilterBar</div>
@@ -54,7 +54,7 @@ jest.mock(
 )
 
 jest.mock(
-    '../ItemGrid',
+    '../ItemGrid.jsx',
     () =>
         function MockItemGrid() {
             return <div>MockItemGrid</div>

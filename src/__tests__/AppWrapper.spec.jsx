@@ -13,7 +13,7 @@ jest.mock('@dhis2/app-runtime-adapter-d2', () => {
 })
 
 jest.mock(
-    '../components/App',
+    '../components/App.jsx',
     () =>
         function MockApp() {
             return <div />
@@ -21,14 +21,14 @@ jest.mock(
 )
 
 jest.mock(
-    '../components/SystemSettingsProvider.js',
+    '../components/SystemSettingsProvider.jsx',
     () =>
         function Mock() {
             return <div className="SystemSettingsProvider" />
         }
 )
 jest.mock(
-    '../components/UserSettingsProvider.js',
+    '../components/UserSettingsProvider.jsx',
     () =>
         function Mock() {
             return <div className="UserSettingsProvider" />

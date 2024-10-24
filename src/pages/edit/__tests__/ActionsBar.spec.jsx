@@ -47,7 +47,7 @@ jest.mock('@dhis2/analytics', () => {
 /* eslint-enable react/prop-types */
 
 jest.mock(
-    '../FilterSettingsDialog',
+    '../FilterSettingsDialog.jsx',
     () =>
         function Mock() {
             return <div className="mock-filter-settings-dialog" />
@@ -56,7 +56,7 @@ jest.mock(
 
 /* eslint-disable react/prop-types */
 jest.mock(
-    '../../../components/ConfirmActionDialog',
+    '../../../components/ConfirmActionDialog.jsx',
     () =>
         function MockConfirmActionDialog({ open }) {
             return open ? <div className="mock-confirm-action-dialog" /> : null

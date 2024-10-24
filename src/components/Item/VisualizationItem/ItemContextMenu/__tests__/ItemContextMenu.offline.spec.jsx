@@ -6,7 +6,7 @@ import { useSystemSettings } from '../../../../SystemSettingsProvider.jsx'
 import WindowDimensionsProvider from '../../../../WindowDimensionsProvider.jsx'
 import ItemContextMenu from '../ItemContextMenu.jsx'
 
-jest.mock('../../../../SystemSettingsProvider', () => {
+jest.mock('../../../../SystemSettingsProvider.jsx', () => {
     return {
         __esModule: true,
         default: jest.fn((children) => <div>{children}</div>),

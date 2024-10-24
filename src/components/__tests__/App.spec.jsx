@@ -53,7 +53,7 @@ jest.mock('../../api/dataStatistics.js', () => {
 })
 
 jest.mock(
-    '../DashboardsBar/DashboardsBar',
+    '../DashboardsBar/DashboardsBar.jsx',
     () =>
         function MockDashboardsBar() {
             return <div>DashboardsBar</div>
@@ -68,7 +68,7 @@ jest.mock('../../pages/view', () => {
     }
 })
 
-jest.mock('../SystemSettingsProvider', () => {
+jest.mock('../SystemSettingsProvider.jsx', () => {
     return {
         __esModule: true,
         default: jest.fn((children) => <div>{children}</div>),
@@ -78,7 +78,7 @@ jest.mock('../SystemSettingsProvider', () => {
     }
 })
 
-jest.mock('../UserSettingsProvider', () => {
+jest.mock('../UserSettingsProvider.jsx', () => {
     return {
         __esModule: true,
         default: jest.fn((children) => <div>{children}</div>),

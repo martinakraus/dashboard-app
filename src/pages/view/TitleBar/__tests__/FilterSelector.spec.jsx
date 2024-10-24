@@ -14,7 +14,7 @@ jest.mock('@dhis2/app-runtime', () => ({
 
 /* eslint-disable react/prop-types */
 jest.mock(
-    '../../../../components/DropdownButton/DropdownButton.js',
+    '../../../../components/DropdownButton/DropdownButton.jsx',
     () =>
         function Mock({ children, ...props }) {
             return (
