@@ -46,4 +46,4 @@ jobs:
                       -H "Content-Type: multipart/form-data" \
                       -H "X-Api-Key: ${{ secrets.DEPENDENCYTRACK_APIKEY }}" \
                       -F "project=c0bd0f2d-d512-460a-81f9-e256e4fb1054" \
-                      -F "bom=@bom.json"
+                      -F "bom=@sbom.json"
