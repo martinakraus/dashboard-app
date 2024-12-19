@@ -33,7 +33,9 @@ jobs:
                   sudo chmod +x /usr/local/bin/cyclonedx-linux-x64
 
             - name: Generate BOMs
-              run: npx cdxgen -o sbom.json
+              run: |
+                  npm install -g @cyclonedx/cdxgen
+                  cdxgen -o sbom.json
 
             - name: Upload SBOM to DependencyTrack
               env:
