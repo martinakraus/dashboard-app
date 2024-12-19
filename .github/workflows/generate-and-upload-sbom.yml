@@ -17,10 +17,6 @@ jobs:
   create-bom:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        containers: [1, 2, 3, 4]
-
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,8 +34,8 @@ jobs:
 
       - name: Generate BOMs
         run: |
-          yarn plugin import https://github.com/CycloneDX/cyclonedx-node-yarn/releases/latest/download/yarn-plugin-cyclonedx.cjs
-          yarn cyclonedx --output-file bom.jsonn
+          yarn set version berry
+          yarn dlx -q @cyclonedx/yarn-plugin-cyclonedx --output-file bom.jsonn
 
       - name: Upload SBOM to DependencyTrack
         env:
